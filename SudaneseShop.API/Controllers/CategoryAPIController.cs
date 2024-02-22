@@ -5,7 +5,7 @@ using System.Net;
 
 namespace SudaneseShop.API.Controllers
 {
-    [Route("api/v{version:apiVersion}/CategoryAPI")]
+    [Route("api/v{version:apiVersion}/category")]
     [ApiController]
     [ApiVersion("1.0")]
     public class CategoryAPIController : ControllerBase
