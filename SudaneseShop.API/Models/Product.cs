@@ -17,7 +17,6 @@ namespace SudaneseShop.API.Models
         public required decimal Price { get; set; }
 
         public int CategoryId { get; set; }
-        [ForeignKey(nameof(CategoryId))]
         public Category? Category { get; set; }
 
         public string ImageUrl { get; set; } = "https://via.placeholder.com/150";
