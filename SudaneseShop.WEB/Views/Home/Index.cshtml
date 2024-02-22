@@ -1,8 +1,77 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿    <!-- Banner section -->
+<style>
+    /* Container holding the image and the overlay text */
+.image-container {
+    position: relative;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+/* Style for the overlay text */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    padding: 20px;
+}
+</style >
+
+<section class="banner">
+    <div class="container">
+        <div class="row p-3 text-center shadow-1-strong rounded mb-5">
+            <div class="col-12">
+                <div class="image-container">
+                    <img src="~/images/background.jpg" class="img-fluid" alt="Banner Image">
+                    <div class="overlay-text">
+                        <h1>Welcome to Sudanese Shop</h1>
+                        <p>Your one-stop shop for clothes, shoes, accessories, and more!</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured products section -->
+<section class="featured-products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="row">
+            <!-- Repeat this card for each featured product -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/images/pic1.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">Product description goes here.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/images/pic2.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">Product description goes here.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/images/pic3.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">Product description goes here.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
