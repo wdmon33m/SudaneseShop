@@ -1,4 +1,4 @@
-namespace SudaneseShop.Web
+namespace SudaneseShop.API
 {
     public class WeatherForecast
     {

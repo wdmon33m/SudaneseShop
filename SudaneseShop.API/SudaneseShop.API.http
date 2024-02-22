@@ -1,0 +1,6 @@
+@SudaneseShop.API_HostAddress = http://localhost:5063
+
+GET {{SudaneseShop.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
