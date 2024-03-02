@@ -1,12 +1,12 @@
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
+// Get the navbar menu element
+let navMenu = document.querySelector("#main-nav");
 
-menu.onclick = () => {
-	menu.classList.toggle("bx-x");
-	navlist.classList.toggle("open");
-};
-
-window.onscroll = () => {
-	menu.classList.remove("bx-x");
-	navlist.classList.remove("open");
-};
+// Listen for scroll events on the window
+window.addEventListener("scroll", () => {
+    // Check if the navbar menu is open
+    if (navMenu.classList.contains("show")) {
+        // Close the navbar menu
+        let toggleButton = document.querySelector(".navbar-toggler");
+        toggleButton.click(); // Simulate a click on the toggle button to close the menu
+    }
+});

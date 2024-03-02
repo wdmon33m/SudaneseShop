@@ -30,7 +30,6 @@ header {
 	z-index: 1000;
 	background-color: var(--bg-color);
 	box-shadow: 0 1px 6px 0 rgba(32 33 36 /5%);
-	padding: 18px 14%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -42,51 +41,39 @@ header {
 	text-transform: uppercase;
 	color: var(--text-color);
 }
-.navlist {
-	display: flex;
-}
-.navlist a {
-	display: inline-block;
-	margin: 0 30px;
-	color: var(--text-color);
-	font-size: var(--p-font);
-	font-weight: 500;
-	transition: all 0.6s;
-}
-.navlist a:hover {
-	transform: translateY(-4px);
-	color: var(--second-color);
-}
+
+	#main-nav a {
+		display: inline-block;
+		color: var(--text-color);
+		font-size: var(--p-font);
+		font-weight: 500;
+		transition: all 0.6s;
+	}
+		#main-nav a:hover {
+			transform: translateY(-4px);
+			color: var(--second-color);
+		}
 .nav-right {
-	display: flex;
 	align-items: center;
 }
 .nav-right a {
 	display: inline-block;
 	font-size: 22px;
 	color: var(--text-color);
-	margin: 0 20px;
 	transition: all 0.6s;
 }
 .nav-right a:hover {
 	transform: translateY(-5px) scale(1.1);
 }
-#menu-icon {
-	font-size: 35px;
-	color: var(--text-color);
-	z-index: 10001;
-	margin-left: 10px;
-	cursor: pointer;
-	display: none;
-}
-section {
+
+/*section {
 	padding: 90px 14% 70px;
-}
+}*/
 .home {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background: url(../images/bg.png);
+	/*background: url(../images/newbg.png);*/
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -100,7 +87,6 @@ section {
 	font-size: var(--h1-font);
 	font-weight: 700;
 	line-height: 1.1;
-	margin-bottom: 20px;
 }
 .home-text h6 {
 	font-size: 15px;
@@ -108,7 +94,6 @@ section {
 	color: var(--second-color);
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	margin-bottom: 10px;
 }
 .home-text p {
 	width: 100%;
@@ -117,9 +102,8 @@ section {
 	font-weight: 400;
 	color: var(--second-color);
 	line-height: 33px;
-	margin-bottom: 35px;
 }
-.btn {
+.btn1 {
 	display: inline-block;
 	padding: 14px 42px;
 	background: var(--text-color);
@@ -129,13 +113,13 @@ section {
 	border: 2px solid transparent;
 	transition: all 0.6s;
 }
-.btn:hover {
+.btn1:hover {
 	transform: scale(0.9) translateY(-6px);
 	border: 2px solid var(--text-color);
 	background: transparent;
 	color: var(--text-color);
 }
-.btn i {
+.btn1 i {
 	margin-left: 9px;
 }
 .brands {
@@ -147,7 +131,6 @@ section {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	gap: 40px;
 }
 .brand-c img {
 	width: 100%;
@@ -212,7 +195,7 @@ section {
 .row-right h6 {
 	font-size: 19px;
 	font-weight: 600;
-	color: var(--second-color);
+	color: red;
 }
 .n-btn {
 	text-align: center;
